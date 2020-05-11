@@ -59,11 +59,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1589202009362
+    "lastModifiedOn": 1589202089265
   },
   "creationTag": {
     "versionNumber": 0,
@@ -90,7 +90,31 @@
   "schema": {
     "columns": [
       {
-        "name": "year",
+        "name": "typhoon_number",
+        "type": "bigint"
+      },
+      {
+        "name": "typhoon_name",
+        "type": "string"
+      },
+      {
+        "name": "lat-long-Geopoint",
+        "type": "string"
+      },
+      {
+        "name": "year_max",
+        "type": "bigint"
+      },
+      {
+        "name": "month_max",
+        "type": "bigint"
+      },
+      {
+        "name": "day_max",
+        "type": "bigint"
+      },
+      {
+        "name": "hour_max",
         "type": "bigint"
       },
       {
