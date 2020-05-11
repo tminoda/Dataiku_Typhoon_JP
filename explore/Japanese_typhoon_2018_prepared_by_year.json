@@ -49,7 +49,7 @@
       "copySelectionFromScript": true,
       "engineType": "LINO",
       "def": {
-        "type": "grouped_columns",
+        "type": "scatter_map",
         "variant": "normal",
         "name": "New chart",
         "userEditedName": false,
@@ -71,10 +71,58 @@
         "yMeasure": [],
         "colorMeasure": [],
         "sizeMeasure": [],
-        "geometry": [],
+        "geometry": [
+          {
+            "column": "lat-long-Geopoint_max",
+            "type": "GEOPOINT",
+            "treatAsAlphanum": false,
+            "isA": "ua",
+            "adminLevel": 0
+          }
+        ],
         "tooltipMeasures": [],
         "boxplotBreakdownDim": [],
         "boxplotValue": [],
+        "filters": [
+          {
+            "filterType": "ALPHANUM_FACET",
+            "column": "typhoon_name",
+            "columnType": "ALPHANUM",
+            "isA": "filter",
+            "excludedValues": {
+              "BOLAVEN": true,
+              "SANBA": true,
+              "EWINIAR": true,
+              "MALIKSI": true,
+              "GAEMI": true,
+              "PRAPIROON": true,
+              "MARIA": true,
+              "SON-TINH": true,
+              "AMPIL": true,
+              "WUKONG": true,
+              "JONGDARI": true,
+              "SHANSHAN": true,
+              "YAGI": true,
+              "LEEPI": true,
+              "BEBINCA": true,
+              "HECTOR": true,
+              "RUMBIA": true,
+              "SOULIK": true,
+              "CIMARON": true,
+              "JEBI": true,
+              "MANGKHUT": true,
+              "BARIJAT": true,
+              "TRAMI": true,
+              "KONG-REY": true,
+              "YUTU": true,
+              "TORAJI": true,
+              "MAN-YI": true,
+              "USAGI": true,
+              "___dku_no_value___": true
+            },
+            "explicitExclude": false
+          }
+        ],
         "axis1LogScale": false,
         "axis2LogScale": false,
         "includeZero": true,
@@ -96,7 +144,7 @@
         "animationFrameDuration": 3000,
         "animationRepeat": true,
         "colorOptions": {
-          "singleColor": "#2678B1",
+          "singleColor": "#F03334",
           "transparency": 0.75,
           "colorPalette": "default",
           "ccScaleMode": "NORMAL",
@@ -130,8 +178,8 @@
           "lockSquareGrid": false
         },
         "mapGridOptions": {
-          "gridLonDeg": 0.6,
-          "gridLatDeg": 0.6
+          "gridLonDeg": 0.5,
+          "gridLatDeg": 0.5
         },
         "disableSafetyLimits": false,
         "useLiveProcessingIfAvailable": true,
