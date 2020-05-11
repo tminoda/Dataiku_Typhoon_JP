@@ -59,11 +59,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1589198516961
+    "lastModifiedOn": 1589201970925
   },
   "creationTag": {
     "versionNumber": 0,
@@ -104,6 +104,10 @@
       {
         "name": "hour",
         "type": "bigint"
+      },
+      {
+        "name": "cont_date",
+        "type": "date"
       },
       {
         "name": "typhoon_number",
@@ -160,6 +164,10 @@
       {
         "name": "landing",
         "type": "bigint"
+      },
+      {
+        "name": "lat-long-Geopoint",
+        "type": "string"
       }
     ],
     "userModified": true
