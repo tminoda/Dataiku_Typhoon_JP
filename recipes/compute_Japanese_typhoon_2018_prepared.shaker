@@ -25,8 +25,35 @@
     "autoRefreshSample": false
   },
   "explorationFilters": [],
-  "exploreUIParams": {},
-  "steps": [],
+  "origin": "PREPARE_RECIPE",
+  "exploreUIParams": {
+    "autoRefresh": true
+  },
+  "steps": [
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "CreateColumnWithGREL",
+      "params": {
+        "expression": "concat(year,\"/\",month,\"/\",day,\" \",hour,\":\",00,\":\",00)",
+        "column": "cont_date"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": true,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "GeoPointCreator",
+      "params": {
+        "out_column": "lat-long-Geopoint",
+        "lat_column": "latitude",
+        "lon_column": "longitude"
+      },
+      "alwaysShowComment": false
+    }
+  ],
   "maxProcessedMemTableBytes": -1,
   "previewMode": "ALL_ROWS",
   "vizSampling": {
@@ -34,7 +61,29 @@
     "autoRefreshSample": false
   },
   "analysisColumnData": {},
-  "columnWidthsByName": {},
+  "columnWidthsByName": {
+    "Max_wind_speed": 120,
+    "KT30_axis": 100,
+    "cont_date1": 100,
+    "year": 100,
+    "KT30_short diameter": 158,
+    "typhoon_name": 105,
+    "latitude": 100,
+    "typhoon_number": 120,
+    "lat-long-Geopoint": 169,
+    "KT50_short diameter": 158,
+    "KT50_axis_direc": 128,
+    "KT30_axis_direc": 128,
+    "landing": 100,
+    "month": 100,
+    "hour": 100,
+    "Central_pressure": 135,
+    "KT50_axis": 100,
+    "cont_date": 134,
+    "day": 100,
+    "class": 100,
+    "longitude": 100
+  },
   "sorting": [],
   "globalSearchQuery": "",
   "coloring": {
