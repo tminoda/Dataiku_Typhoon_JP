@@ -52,6 +52,37 @@
         "lon_column": "longitude"
       },
       "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "ColumnReorder",
+      "params": {
+        "columns": [
+          "lat-long-Geopoint"
+        ],
+        "reorderAction": "AT_START",
+        "appliesTo": "SINGLE_COLUMN"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "ColumnReorder",
+      "params": {
+        "referenceColumn": "year",
+        "columns": [
+          "latitude",
+          "longitude",
+          "lat-long-Geopoint"
+        ],
+        "reorderAction": "BEFORE_COLUMN",
+        "appliesTo": "COLUMNS"
+      },
+      "alwaysShowComment": false
     }
   ],
   "maxProcessedMemTableBytes": -1,
