@@ -59,11 +59,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1589201970925
+    "lastModifiedOn": 1589204613310
   },
   "creationTag": {
     "versionNumber": 0,
@@ -89,6 +89,18 @@
   },
   "schema": {
     "columns": [
+      {
+        "name": "latitude",
+        "type": "double"
+      },
+      {
+        "name": "longitude",
+        "type": "double"
+      },
+      {
+        "name": "lat-long-Geopoint",
+        "type": "string"
+      },
       {
         "name": "year",
         "type": "bigint"
@@ -120,14 +132,6 @@
       {
         "name": "class",
         "type": "bigint"
-      },
-      {
-        "name": "latitude",
-        "type": "double"
-      },
-      {
-        "name": "longitude",
-        "type": "double"
       },
       {
         "name": "Central_pressure",
@@ -164,10 +168,6 @@
       {
         "name": "landing",
         "type": "bigint"
-      },
-      {
-        "name": "lat-long-Geopoint",
-        "type": "string"
       }
     ],
     "userModified": true
