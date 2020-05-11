@@ -59,11 +59,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 2,
+    "versionNumber": 3,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1589202089265
+    "lastModifiedOn": 1589202148828
   },
   "creationTag": {
     "versionNumber": 0,
@@ -98,10 +98,6 @@
         "type": "string"
       },
       {
-        "name": "lat-long-Geopoint",
-        "type": "string"
-      },
-      {
         "name": "year_max",
         "type": "bigint"
       },
@@ -116,6 +112,14 @@
       {
         "name": "hour_max",
         "type": "bigint"
+      },
+      {
+        "name": "lat-long-Geopoint_min",
+        "type": "string"
+      },
+      {
+        "name": "lat-long-Geopoint_max",
+        "type": "string"
       },
       {
         "name": "count",
