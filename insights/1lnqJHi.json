@@ -1,0 +1,242 @@
+{
+  "type": "chart",
+  "params": {
+    "datasetSmartName": "Japanese_typhoon_2018_prepared",
+    "engineType": "LINO",
+    "refreshableSelection": {
+      "selection": {
+        "useMemTable": false,
+        "filter": {
+          "distinct": false,
+          "enabled": false
+        },
+        "partitionSelectionMethod": "ALL",
+        "latestPartitionsN": 1,
+        "ordering": {
+          "enabled": false,
+          "rules": []
+        },
+        "samplingMethod": "HEAD_SEQUENTIAL",
+        "maxRecords": 10000,
+        "targetRatio": 0.02,
+        "withinFirstN": -1,
+        "maxReadUncompressedBytes": -1
+      },
+      "autoRefreshSample": false,
+      "_refreshTrigger": 0
+    },
+    "def": {
+      "type": "scatter_map",
+      "variant": "normal",
+      "name": "New chart",
+      "userEditedName": false,
+      "genericDimension0": [],
+      "genericDimension1": [],
+      "facetDimension": [],
+      "animationDimension": [],
+      "genericMeasures": [],
+      "xDimension": [],
+      "yDimension": [],
+      "uaXDimension": [],
+      "uaYDimension": [],
+      "uaSize": [
+        {
+          "column": "Central_pressure",
+          "type": "NUMERICAL",
+          "treatAsAlphanum": false,
+          "isA": "ua",
+          "adminLevel": 0
+        }
+      ],
+      "uaShape": [],
+      "uaColor": [
+        {
+          "column": "class",
+          "type": "NUMERICAL",
+          "treatAsAlphanum": true,
+          "isA": "ua",
+          "adminLevel": 0
+        }
+      ],
+      "uaTooltip": [
+        {
+          "column": "typhoon_name",
+          "type": "ALPHANUM",
+          "treatAsAlphanum": false,
+          "isA": "ua",
+          "adminLevel": 0
+        },
+        {
+          "column": "year",
+          "type": "NUMERICAL",
+          "treatAsAlphanum": false,
+          "isA": "ua",
+          "adminLevel": 0
+        },
+        {
+          "column": "month",
+          "type": "NUMERICAL",
+          "treatAsAlphanum": false,
+          "isA": "ua",
+          "adminLevel": 0
+        },
+        {
+          "column": "day",
+          "type": "NUMERICAL",
+          "treatAsAlphanum": false,
+          "isA": "ua",
+          "adminLevel": 0
+        },
+        {
+          "column": "hour",
+          "type": "NUMERICAL",
+          "treatAsAlphanum": false,
+          "isA": "ua",
+          "adminLevel": 0
+        }
+      ],
+      "groupDimension": [],
+      "xMeasure": [],
+      "yMeasure": [],
+      "colorMeasure": [],
+      "sizeMeasure": [],
+      "geometry": [
+        {
+          "column": "lat-long-Geopoint",
+          "type": "GEOPOINT",
+          "treatAsAlphanum": false,
+          "isA": "ua",
+          "adminLevel": 0
+        }
+      ],
+      "tooltipMeasures": [],
+      "boxplotBreakdownDim": [],
+      "boxplotValue": [],
+      "filters": [
+        {
+          "filterType": "ALPHANUM_FACET",
+          "column": "month",
+          "columnType": "NUMERICAL",
+          "minValue": 1.7524,
+          "isA": "filter",
+          "excludedValues": {
+            "7.0": true,
+            "9.0": true,
+            "6.0": true,
+            "11.0": true,
+            "10.0": true,
+            "2.0": true,
+            "3.0": true,
+            "1.0": true,
+            "12.0": true,
+            "4.0": true
+          },
+          "explicitExclude": false
+        },
+        {
+          "filterType": "ALPHANUM_FACET",
+          "column": "typhoon_name",
+          "columnType": "ALPHANUM",
+          "isA": "filter",
+          "excludedValues": {},
+          "explicitExclude": false
+        },
+        {
+          "filterType": "ALPHANUM_FACET",
+          "column": "landing",
+          "columnType": "NUMERICAL",
+          "minValue": 0.0053,
+          "isA": "filter",
+          "excludedValues": {},
+          "explicitExclude": false
+        }
+      ],
+      "axis1LogScale": false,
+      "axis2LogScale": false,
+      "includeZero": true,
+      "smoothing": true,
+      "showLegend": true,
+      "showXAxis": false,
+      "showInChartValues": false,
+      "showInChartLabels": true,
+      "strokeWidth": 1,
+      "fillOpacity": 0.6,
+      "showXAxisLabel": true,
+      "showYAxisLabel": true,
+      "hexbinRadius": 20,
+      "hexbinNumber": 20,
+      "hexbinRadiusMode": "NUM_HEXAGONS",
+      "chartHeight": 200,
+      "singleXAxis": true,
+      "multiTooltips": false,
+      "animationFrameDuration": 3000,
+      "animationRepeat": true,
+      "colorOptions": {
+        "singleColor": "#2678B1",
+        "transparency": 0.6,
+        "colorPalette": "default",
+        "ccScaleMode": "NORMAL",
+        "customPalette": {
+          "id": "__dku_custom__",
+          "name": "Custom Palette",
+          "colors": [],
+          "values": [],
+          "fixedValues": false
+        },
+        "paletteType": "DIVERGING",
+        "quantizationMode": "NONE",
+        "numQuantizeSteps": 5,
+        "paletteMiddleValue": 0.0
+      },
+      "bubblesOptions": {
+        "defaultRadius": 2.0,
+        "singleShape": "FILLED_CIRCLE"
+      },
+      "computeMode": "NORMAL",
+      "xAxisMode": "NORMAL",
+      "yAxisMode": "NORMAL",
+      "pieOptions": {
+        "donutHoleSize": 54.0
+      },
+      "scatterOptions": {
+        "equalScales": false,
+        "identityLine": false
+      },
+      "mapOptions": {
+        "tilesLayer": "cartodb-positron",
+        "lockSquareGrid": false
+      },
+      "mapGridOptions": {
+        "gridLonDeg": 0.5,
+        "gridLatDeg": 0.5
+      },
+      "disableSafetyLimits": false,
+      "useLiveProcessingIfAvailable": true,
+      "legendPlacement": "OUTER_RIGHT"
+    },
+    "maxDataBytes": 157286400
+  },
+  "owner": "admin",
+  "listed": false,
+  "name": "New chart on Japanese_typhoon_2018_prepared",
+  "dashboardCreationId": "OjR1iEY",
+  "versionTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1589204223586
+  },
+  "creationTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1589204223586
+  },
+  "tags": [],
+  "customFields": {},
+  "checklists": {
+    "checklists": []
+  }
+}
