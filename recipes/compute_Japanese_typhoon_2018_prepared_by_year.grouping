@@ -41,25 +41,6 @@
       "$selected": false,
       "stddev": false,
       "first": false
-    },
-    {
-      "last": false,
-      "max": false,
-      "firstLastNotNull": false,
-      "column": "lat-long-Geopoint",
-      "count": false,
-      "$idx": 17,
-      "sum": false,
-      "concat": false,
-      "type": "string",
-      "concatDistinct": false,
-      "sum2": false,
-      "min": false,
-      "countDistinct": false,
-      "avg": false,
-      "$selected": false,
-      "stddev": false,
-      "first": false
     }
   ],
   "values": [
@@ -369,6 +350,25 @@
       "avg": false,
       "stddev": false,
       "first": false
+    },
+    {
+      "last": false,
+      "max": true,
+      "firstLastNotNull": false,
+      "column": "lat-long-Geopoint",
+      "count": false,
+      "$idx": 17,
+      "sum": false,
+      "concat": false,
+      "type": "string",
+      "concatDistinct": false,
+      "sum2": false,
+      "min": true,
+      "countDistinct": false,
+      "avg": false,
+      "$selected": false,
+      "stddev": false,
+      "first": false
     }
   ],
   "globalCount": true,
@@ -422,10 +422,6 @@
             "type": "string"
           },
           {
-            "name": "lat-long-Geopoint",
-            "type": "string"
-          },
-          {
             "name": "year_max",
             "type": "bigint"
           },
@@ -440,6 +436,14 @@
           {
             "name": "hour_max",
             "type": "bigint"
+          },
+          {
+            "name": "lat-long-Geopoint_min",
+            "type": "string"
+          },
+          {
+            "name": "lat-long-Geopoint_max",
+            "type": "string"
           },
           {
             "name": "count",
