@@ -363,7 +363,7 @@
       "type": "string",
       "concatDistinct": false,
       "sum2": false,
-      "min": true,
+      "min": false,
       "countDistinct": false,
       "avg": false,
       "$selected": false,
@@ -436,10 +436,6 @@
           {
             "name": "hour_max",
             "type": "bigint"
-          },
-          {
-            "name": "lat-long-Geopoint_min",
-            "type": "string"
           },
           {
             "name": "lat-long-Geopoint_max",
