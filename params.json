@@ -114,6 +114,7 @@
   },
   "name": "Japanese_typhoon",
   "projectStatus": "Sandbox",
+  "imgPattern": 4,
   "metrics": {
     "probes": [],
     "engineConfig": {
@@ -168,6 +169,13 @@
       "checks": []
     }
   },
+  "versionTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1589197415247
+  },
   "creationTag": {
     "versionNumber": 0,
     "lastModifiedBy": {
@@ -175,6 +183,7 @@
     },
     "lastModifiedOn": 1589197346637
   },
+  "description": "Data soure : https://www.data.jma.go.jp/fcd/yoho/typhoon/position_table/table2018.html\nAWS S3 bucket: dataiku-typhoon\n\nDownload from this URL and stored to AWS S3 bucket\n",
   "shortDesc": "The project *Japanese_typhoon* was created by Minoda Takashi on May 11th 2020",
   "tags": [],
   "customFields": {},
