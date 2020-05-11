@@ -186,7 +186,7 @@
         "animationRepeat": true,
         "colorOptions": {
           "singleColor": "#2678B1",
-          "transparency": 0.75,
+          "transparency": 0.6,
           "colorPalette": "default",
           "ccScaleMode": "NORMAL",
           "customPalette": {
@@ -196,7 +196,7 @@
             "values": [],
             "fixedValues": false
           },
-          "paletteType": "CONTINUOUS",
+          "paletteType": "DIVERGING",
           "quantizationMode": "NONE",
           "numQuantizeSteps": 5,
           "paletteMiddleValue": 0.0
