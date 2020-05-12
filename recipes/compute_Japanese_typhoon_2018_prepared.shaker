@@ -47,7 +47,7 @@
       "disabled": false,
       "type": "CreateColumnWithGREL",
       "params": {
-        "expression": "format(concat(year,\"-\",month,\"-\",day,\" \",hour,\":\",\"00:00\"),\"YYYY-MM-DD HH:MM:SS\")\n\n",
+        "expression": "concat(year,\"-\",if(month\u003c\u003d9,\"0\"+month,month),\"-\",if(day\u003c\u003d9,\"0\"+day,day),\"T\",if(hour\u003c\u003d9,\"0\"+hour,hour),\":00:00.000Z\")",
         "column": "cont_date"
       },
       "alwaysShowComment": false
@@ -109,6 +109,36 @@
         "truncate_limit": 0
       },
       "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "ColumnReorder",
+      "params": {
+        "referenceColumn": "longitude",
+        "columns": [
+          "cont_date"
+        ],
+        "reorderAction": "BEFORE_COLUMN",
+        "appliesTo": "SINGLE_COLUMN"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "ColumnReorder",
+      "params": {
+        "referenceColumn": "cont_date",
+        "columns": [
+          "longitude"
+        ],
+        "reorderAction": "BEFORE_COLUMN",
+        "appliesTo": "SINGLE_COLUMN"
+      },
+      "alwaysShowComment": false
     }
   ],
   "maxProcessedMemTableBytes": -1,
@@ -137,7 +167,7 @@
     "Central_pressure": 135,
     "KT50_axis": 100,
     "cont_hour_1": 100,
-    "cont_date": 134,
+    "cont_date": 262,
     "day": 100,
     "class": 100,
     "longitude": 100
@@ -145,7 +175,7 @@
   "sorting": [
     {
       "column": "cont_date",
-      "ascending": true
+      "ascending": false
     }
   ],
   "globalSearchQuery": "",
