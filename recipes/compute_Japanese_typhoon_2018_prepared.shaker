@@ -36,7 +36,7 @@
       "disabled": false,
       "type": "CreateColumnWithGREL",
       "params": {
-        "expression": "concat(year,\"/\",month,\"/\",day,\" \",hour,\":\",00,\":\",00)",
+        "expression": "concat(year,\"/\",month,\"/\",day,\" \",hour,\":00:00\")",
         "column": "cont_date"
       },
       "alwaysShowComment": false
@@ -130,7 +130,12 @@
     "class": 100,
     "longitude": 100
   },
-  "sorting": [],
+  "sorting": [
+    {
+      "column": "cont_date",
+      "ascending": true
+    }
+  ],
   "globalSearchQuery": "",
   "coloring": {
     "scheme": "MEANING_AND_STATUS",
