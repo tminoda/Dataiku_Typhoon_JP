@@ -59,11 +59,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 2,
+    "versionNumber": 3,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1589204613310
+    "lastModifiedOn": 1589287333555
   },
   "creationTag": {
     "versionNumber": 0,
@@ -119,7 +119,8 @@
       },
       {
         "name": "cont_date",
-        "type": "date"
+        "type": "date",
+        "meaning": "Date"
       },
       {
         "name": "typhoon_number",
