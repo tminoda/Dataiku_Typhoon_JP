@@ -36,7 +36,18 @@
       "disabled": false,
       "type": "CreateColumnWithGREL",
       "params": {
-        "expression": "concat(year,\"/\",month,\"/\",day,\" \",hour,\":00:00\")",
+        "expression": "if(hour\u003c\u003d9, concat(\"0\"+hour),hour)",
+        "column": "cont_hour_1"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "CreateColumnWithGREL",
+      "params": {
+        "expression": "format(concat(year,\"-\",month,\"-\",day,\" \",hour,\":\",\"00:00\"),\"YYYY-MM-DD HH:MM:SS\")\n\n",
         "column": "cont_date"
       },
       "alwaysShowComment": false
@@ -85,7 +96,7 @@
       "alwaysShowComment": false
     },
     {
-      "preview": true,
+      "preview": false,
       "metaType": "PROCESSOR",
       "disabled": false,
       "type": "StringTransformer",
@@ -125,6 +136,7 @@
     "hour": 100,
     "Central_pressure": 135,
     "KT50_axis": 100,
+    "cont_hour_1": 100,
     "cont_date": 134,
     "day": 100,
     "class": 100,
