@@ -76,43 +76,30 @@
           {
             "column": "class",
             "type": "NUMERICAL",
-            "treatAsAlphanum": true,
+            "treatAsAlphanum": false,
             "isA": "ua",
             "adminLevel": 0
           }
         ],
         "uaTooltip": [
           {
-            "column": "typhoon_name",
-            "type": "ALPHANUM",
+            "column": "cont_date",
+            "type": "DATE",
             "treatAsAlphanum": false,
-            "isA": "ua",
-            "adminLevel": 0
-          },
-          {
-            "column": "year",
-            "type": "NUMERICAL",
-            "treatAsAlphanum": false,
-            "isA": "ua",
-            "adminLevel": 0
-          },
-          {
-            "column": "month",
-            "type": "NUMERICAL",
-            "treatAsAlphanum": false,
-            "isA": "ua",
-            "adminLevel": 0
-          },
-          {
-            "column": "day",
-            "type": "NUMERICAL",
-            "treatAsAlphanum": false,
+            "dateMode": "RANGE",
             "isA": "ua",
             "adminLevel": 0
           },
           {
             "column": "hour",
             "type": "NUMERICAL",
+            "treatAsAlphanum": false,
+            "isA": "ua",
+            "adminLevel": 0
+          },
+          {
+            "column": "typhoon_name",
+            "type": "ALPHANUM",
             "treatAsAlphanum": false,
             "isA": "ua",
             "adminLevel": 0
@@ -143,7 +130,6 @@
             "minValue": 1.7524,
             "isA": "filter",
             "excludedValues": {
-              "7.0": true,
               "9.0": true,
               "6.0": true,
               "11.0": true,
@@ -197,7 +183,7 @@
         "colorOptions": {
           "singleColor": "#2678B1",
           "transparency": 0.6,
-          "colorPalette": "default",
+          "colorPalette": "YlOrRd",
           "ccScaleMode": "NORMAL",
           "customPalette": {
             "id": "__dku_custom__",
@@ -206,7 +192,7 @@
             "values": [],
             "fixedValues": false
           },
-          "paletteType": "DIVERGING",
+          "paletteType": "CONTINUOUS",
           "quantizationMode": "NONE",
           "numQuantizeSteps": 5,
           "paletteMiddleValue": 0.0
