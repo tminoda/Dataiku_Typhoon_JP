@@ -59,11 +59,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 4,
+    "versionNumber": 5,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1589288146829
+    "lastModifiedOn": 1589289453149
   },
   "creationTag": {
     "versionNumber": 0,
@@ -98,33 +98,34 @@
         "type": "double"
       },
       {
-        "name": "lat-long-Geopoint",
-        "type": "string"
-      },
-      {
-        "name": "year",
-        "type": "bigint"
-      },
-      {
-        "name": "month",
-        "type": "bigint"
-      },
-      {
-        "name": "day",
-        "type": "bigint"
-      },
-      {
-        "name": "hour",
-        "type": "bigint"
-      },
-      {
         "name": "cont_date",
         "type": "date",
         "meaning": "Date"
       },
       {
+        "name": "lat-long-Geopoint",
+        "type": "string"
+      },
+      {
+        "name": "year",
+        "type": "string"
+      },
+      {
+        "name": "month",
+        "type": "string"
+      },
+      {
+        "name": "day",
+        "type": "string"
+      },
+      {
+        "name": "hour",
+        "type": "string"
+      },
+      {
         "name": "cont_hour_1",
-        "type": "bigint"
+        "type": "string",
+        "meaning": "DoubleMeaning"
       },
       {
         "name": "typhoon_number",
